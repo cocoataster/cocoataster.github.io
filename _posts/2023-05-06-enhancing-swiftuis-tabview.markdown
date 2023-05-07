@@ -1,8 +1,7 @@
 ---
 layout: post
 title:  "Enhancing SwiftUI's TabView"
-date:   2023-05-06 20:00:00 +0100
-categories: jekyll update
+categories: swiftui
 ---
 SwiftUI gives us amazing out-of-the-box components to create the bare bones of our Apps, yet sometimes it fails to handle things we considered *"easy and simple"* in `UIKit`.
 

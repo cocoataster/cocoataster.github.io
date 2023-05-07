@@ -1,0 +1,10 @@
+// Placeholder to allow overriding predefined variables smoothly.
+
+$branding-yellow: rgba(255, 230, 0, 0.898);
+
+@if $color-scheme-dark {
+    $link-base-color: $branding-yellow;
+    $link-visited-color: darken($branding-yellow, 15%);
+}
+
+// $border-color-01: $branding-yellow;
