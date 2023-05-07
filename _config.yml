@@ -15,17 +15,22 @@
 # in the templates via {{ site.myvariable }}.
 title: Cocoataster
 email: me@cocoataster.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+# description: >- # this means to ignore newlines until "baseurl:"
+#   Write an awesome description for your new site here. You can edit this
+#   line in _config.yml. It will appear in your document head meta (for
+#   Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://cocoataster.com" # the base hostname & protocol for your site, e.g. http://example.com
+mastodon_username: cocoataster
 twitter_username: cocoataster
 github_username:  cocoataster
 
 # Build settings
 markdown: kramdown
+kramdown:
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    line_numbers: false
 theme: minima
 plugins:
   - jekyll-feed
