@@ -1,29 +1,84 @@
 // Custom Styles for Liquid Glass Design
 
 body {
-  background-color: $bg-color;
-  color: $text-color;
+  background-color: var(--bg-color);
+  color: var(--text-color);
   margin: 0;
   overflow-x: hidden;
   font-family: $base-font-family;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+// Override minima base link colors
+a {
+  color: var(--link-color);
+
+  &:visited {
+    color: var(--link-visited-color);
+  }
+
+  &:hover {
+    color: var(--link-hover-color);
+  }
+}
+
+// Override minima code blocks
+pre,
+code {
+  background-color: var(--code-bg);
+  border-color: var(--code-border);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.highlight {
+  background: var(--code-bg);
+
+  .highlighter-rouge & {
+    background: var(--code-bg);
+  }
+}
+
+// Override minima blockquotes
+blockquote {
+  color: var(--blockquote-color);
+  border-left-color: var(--blockquote-border);
+}
+
+// Override minima tables
+table {
+  color: var(--table-text-color);
+  border-color: var(--table-border-color);
+
+  tr:nth-child(even) {
+    background-color: var(--table-zebra-color);
+  }
+
+  th {
+    background-color: var(--table-header-bg);
+    border-color: var(--table-header-border);
+  }
+
+  td {
+    border-color: var(--table-border-color);
+  }
 }
 
 // Glass Container Effect
 .glass-container {
-  background: $glass-bg;
+  background: var(--glass-bg);
   backdrop-filter: blur($glass-blur);
   -webkit-backdrop-filter: blur($glass-blur);
-  border: 1px solid $glass-border;
+  border: 1px solid var(--glass-border);
   border-radius: 20px;
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   padding: 20px;
   margin-bottom: 20px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease, border-color 0.3s ease;
 
   &:hover {
     transform: translateY(-5px);
     box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.45);
-    border: 1px solid rgba(255, 255, 255, 0.15);
+    border: 1px solid var(--glass-hover-border);
   }
 }
 
@@ -37,7 +92,8 @@ body {
   z-index: -1;
   overflow: hidden;
   filter: blur(80px);
-  opacity: 0.5;
+  opacity: var(--blob-opacity);
+  transition: opacity 0.3s ease;
 
   .blob {
     position: absolute;
@@ -49,13 +105,13 @@ body {
   }
 
   .blob-1 {
-    background: radial-gradient(circle, $accent-primary 0%, transparent 70%);
+    background: radial-gradient(circle, var(--accent-primary) 0%, transparent 70%);
     top: -100px;
     left: -100px;
   }
 
   .blob-2 {
-    background: radial-gradient(circle, $accent-secondary 0%, transparent 70%);
+    background: radial-gradient(circle, var(--accent-secondary) 0%, transparent 70%);
     bottom: -100px;
     right: -100px;
     animation-delay: -5s;
@@ -73,24 +129,111 @@ body {
 }
 
 // Header Customization
+.site-header .wrapper {
+  position: relative;
+}
+
 .site-header {
-  background: rgba(3, 3, 3, 0.7) !important;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border-bottom: 1px solid $glass-border !important;
+  background: var(--header-bg) !important;
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border-top: none !important;
+  border-bottom: 1px solid var(--glass-border) !important;
   position: sticky;
   top: 0;
   z-index: 100;
+  padding: 8px 0 !important;
+  min-height: 64px !important;
+  line-height: 64px !important;
+  transition: background 0.3s ease, border-color 0.3s ease;
 }
 
 .site-title {
+  font-size: 22px !important;
   font-weight: 800 !important;
-  letter-spacing: -1px;
+  letter-spacing: -0.5px;
+  color: var(--text-color) !important;
+  transition: opacity 0.2s ease, color 0.3s ease;
+
+  &,
+  &:visited {
+    color: var(--text-color) !important;
+  }
+
+  &:hover {
+    opacity: 0.8;
+    text-decoration: none !important;
+  }
+}
+
+.site-nav {
+  background-color: var(--nav-mobile-bg) !important;
+  border-color: var(--glass-border) !important;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+
+  .menu-icon > svg path {
+    fill: var(--hamburger-color);
+  }
+
+  .page-link {
+    color: var(--text-color);
+    font-size: 15px;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 10px;
+    transition: background 0.2s ease, color 0.2s ease;
+
+    &:hover {
+      background: var(--nav-hover-bg);
+      color: var(--accent-secondary) !important;
+    }
+  }
+
+  @media screen and (min-width: 600px) {
+    background-color: transparent !important;
+    border: none !important;
+  }
+}
+
+// Theme Toggle Button — centered in the header
+.theme-toggle {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  color: var(--text-color);
+  transition: background 0.2s ease, border-color 0.2s ease, color 0.3s ease;
+  z-index: 1;
+
+  svg {
+    width: 18px;
+    height: 18px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  &:hover {
+    background: var(--nav-hover-bg);
+    border-color: var(--glass-hover-border);
+  }
 }
 
 // Post Links
 .post-link {
-  color: $accent-secondary !important;
+  color: var(--accent-secondary) !important;
   font-weight: 600;
   text-decoration: none;
 
@@ -100,13 +243,119 @@ body {
 }
 
 .post-meta {
-  color: $text-muted !important;
+  color: var(--text-muted) !important;
+}
+
+// Post & page content
+.post-title {
+  color: var(--text-color);
+}
+
+.post-content {
+  color: var(--text-color);
+
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--text-color);
+  }
 }
 
 // Footer
 .site-footer {
-  border-top: 1px solid $glass-border !important;
+  border-top: 1px solid var(--glass-border) !important;
   padding: 30px 0;
+}
+
+.footer-col-wrapper,
+.social-links {
+  color: var(--footer-text-color);
+}
+
+// App Showcase
+.app-showcase {
+  padding: 40px 0;
+}
+
+.showcase-heading {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--text-color);
+  margin-bottom: 24px;
+}
+
+.app-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.app-card.glass-container {
+  text-decoration: none !important;
+  padding: 24px;
+  cursor: pointer;
+
+  &:hover {
+    .app-name {
+      color: var(--accent-secondary);
+    }
+  }
+}
+
+.app-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+}
+
+.app-icon {
+  width: 96px;
+  height: 96px;
+  border-radius: 22%;
+  overflow: hidden;
+  flex-shrink: 0;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.app-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.app-name {
+  color: var(--text-color);
+  font-size: 18px;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.app-tagline {
+  color: var(--text-muted);
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+@media (max-width: 700px) {
+  .app-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .app-card-content {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .app-icon {
+    width: 72px;
+    height: 72px;
+  }
 }
 
 .social-media-list {
@@ -114,11 +363,11 @@ body {
   gap: 15px;
 
   a {
-    color: $text-muted !important;
+    color: var(--text-muted) !important;
     transition: color 0.3s ease;
 
     &:hover {
-      color: $accent-secondary !important;
+      color: var(--accent-secondary) !important;
     }
   }
 }

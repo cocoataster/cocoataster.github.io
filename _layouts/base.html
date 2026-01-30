@@ -19,6 +19,32 @@
 
     {%- include footer.html -%}
 
+    <script>
+      (function() {
+        var toggle = document.getElementById('theme-toggle');
+        if (!toggle) return;
+
+        var iconMoon = toggle.querySelector('.icon-moon');
+        var iconSun = toggle.querySelector('.icon-sun');
+
+        function updateIcons() {
+          var isLight = document.documentElement.getAttribute('data-theme') === 'light';
+          iconMoon.style.display = isLight ? 'none' : 'block';
+          iconSun.style.display = isLight ? 'block' : 'none';
+        }
+
+        updateIcons();
+
+        toggle.addEventListener('click', function() {
+          var current = document.documentElement.getAttribute('data-theme');
+          var next = current === 'light' ? 'dark' : 'light';
+          document.documentElement.setAttribute('data-theme', next);
+          localStorage.setItem('theme', next);
+          updateIcons();
+        });
+      })();
+    </script>
+
   </body>
 
 </html>

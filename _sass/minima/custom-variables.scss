@@ -1,11 +1,13 @@
 // Modern Liquid Glass Variables
+
+// SCSS fallbacks
 $bg-color: #030303;
 $glass-bg: rgba(255, 255, 255, 0.03);
 $glass-border: rgba(255, 255, 255, 0.08);
 $glass-blur: 20px;
 
-$accent-primary: #7c4dff; // Soft Purple/Violet
-$accent-secondary: #00e5ff; // Electric Blue
+$accent-primary: #7c4dff;
+$accent-secondary: #00e5ff;
 $text-color: #f5f5f7;
 $text-muted: #86868b;
 
@@ -21,3 +23,63 @@ $spacing-unit: 30px;
 $base-font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 $base-font-size: 16px;
 $base-line-height: 1.6;
+
+// CSS Custom Properties — dark (default)
+:root {
+  --bg-color: #030303;
+  --text-color: #f5f5f7;
+  --text-muted: #86868b;
+  --glass-bg: rgba(255, 255, 255, 0.03);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --accent-primary: #7c4dff;
+  --accent-secondary: #00e5ff;
+  --header-bg: rgba(3, 3, 3, 0.6);
+  --blob-opacity: 0.5;
+  --glass-hover-border: rgba(255, 255, 255, 0.15);
+  --nav-hover-bg: rgba(255, 255, 255, 0.08);
+  --link-color: #79b8ff;
+  --link-visited-color: #79b8ff;
+  --link-hover-color: #bbbbbb;
+  --code-bg: #212121;
+  --code-border: #646464;
+  --blockquote-color: #999999;
+  --blockquote-border: #646464;
+  --table-text-color: #bbbbbb;
+  --table-border-color: #646464;
+  --table-zebra-color: #1c1c1c;
+  --table-header-bg: #282828;
+  --table-header-border: #3b3b3b;
+  --nav-mobile-bg: #181818;
+  --hamburger-color: #999999;
+  --footer-text-color: #999999;
+}
+
+// Light palette
+[data-theme="light"] {
+  --bg-color: #f8f8fa;
+  --text-color: #1d1d1f;
+  --text-muted: #6e6e73;
+  --glass-bg: rgba(0, 0, 0, 0.03);
+  --glass-border: rgba(0, 0, 0, 0.08);
+  --accent-primary: #6200ee;
+  --accent-secondary: #0077b6;
+  --header-bg: rgba(248, 248, 250, 0.7);
+  --blob-opacity: 0.3;
+  --glass-hover-border: rgba(0, 0, 0, 0.15);
+  --nav-hover-bg: rgba(0, 0, 0, 0.06);
+  --link-color: #2a7ae2;
+  --link-visited-color: #1756a9;
+  --link-hover-color: #1d1d1f;
+  --code-bg: #f0f0f3;
+  --code-border: #d0d0d5;
+  --blockquote-color: #6e6e73;
+  --blockquote-border: #d0d0d5;
+  --table-text-color: #333333;
+  --table-border-color: #d0d0d5;
+  --table-zebra-color: #f0f0f3;
+  --table-header-bg: #e8e8ec;
+  --table-header-border: #d0d0d5;
+  --nav-mobile-bg: #f8f8fa;
+  --hamburger-color: #6e6e73;
+  --footer-text-color: #6e6e73;
+}

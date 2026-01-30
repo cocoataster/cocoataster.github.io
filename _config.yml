@@ -40,20 +40,37 @@ minima:
   #   - { platform: instagram,      user_url: "https://www.instagram.com/jekyll" }
   #   - { platform: keybase,        user_url: "https://keybase.io/jekyll" }
   #   - { platform: linkedin,       user_url: "https://www.linkedin.com/in/jekyll" }
-    - { platform: mastodon,       user_url: "https://mastodon.social/@cocoataster" }
   #   - { platform: microdotblog,   user_url: "https://micro.blog/jekyll" }
   #   - { platform: pinterest,      user_url: "https://www.pinterest.com/jekyll" }
   #   - { platform: stackoverflow,  user_url: "https://stackoverflow.com/users/1234567/jekyll" }
   #   - { platform: telegram,       user_url: "https://t.me/jekyll" }
-    - { platform: twitter,        user_url: "https://twitter.com/cocoataster" }
+    - { platform: twitter,        user_url: "https://x.com/cocoataster" }
+    - { platform: bluesky,        user_url: "https://bsky.app/profile/cocoataster.bsky.social" }
   #   - { platform: youtube,        user_url: "https://www.youtube.com/jekyll" }
+
+# Apps displayed on the homepage
+apps:
+  - name: Impulses
+    id: impulses
+    icon: /assets/icons/impulses.png
+    tagline: Track habits and daily impulses
+    url: "https://cocoataster.com/impulses/"
+  - name: Meals
+    id: meals
+    icon: /assets/icons/meals.png
+    tagline: Simple and visual meal logging
+    url: "https://www.cocoataster.com/meals"
+  - name: QuickScore
+    id: quickscore
+    icon: /assets/icons/quickscore.png
+    tagline: Fast and easy scorekeeping
+    url: "https://www.cocoataster.com/quick-score-landing"
 
 # If you want to link only specific pages in your header, uncomment this and add the path to the pages in
 # order as they should show up.
 #
 header_pages:
-  - meals.md
-  - quick-score.md
+  - posts.html
   - about.md
 
 # Set to `true` to show excerpts on the homepage.
