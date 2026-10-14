@@ -17,7 +17,7 @@ Esta Política de privacidad explica cómo la app para iOS **Bites** («Bites»,
 Eric Sans
 Barcelona, España
 Web: https://cocoataster.com
-Correo electrónico: [CONTACT EMAIL]
+Correo electrónico: privacy@cocoataster.com
 
 ## 2. Los datos de tu diario: guardados en tu dispositivo
 
@@ -150,7 +150,7 @@ Según el RGPD y la Ley Orgánica 3/2018 (LOPDGDD), tienes estos derechos:
 - oposición, incluida la oposición al tratamiento basado en el interés legítimo
 - retirar tu consentimiento en cualquier momento, sin que afecte al tratamiento anterior
 
-Como el desarrollador no conserva datos personales que te identifiquen, la mayoría de solicitudes se resuelven mejor directamente en tu dispositivo o con Apple o Google. Aun así, puedes escribir al desarrollador a [CONTACT EMAIL] con cualquier duda o solicitud sobre privacidad.
+Como el desarrollador no conserva datos personales que te identifiquen, la mayoría de solicitudes se resuelven mejor directamente en tu dispositivo o con Apple o Google. Aun así, puedes escribir al desarrollador a privacy@cocoataster.com con cualquier duda o solicitud sobre privacidad.
 
 También tienes derecho a presentar una reclamación ante una autoridad de control. En España es la **Agencia Española de Protección de Datos (AEPD)**, C/ Jorge Juan 6, 28001 Madrid, https://www.aepd.es.
 
@@ -172,5 +172,5 @@ Esta política puede actualizarse, por ejemplo al añadir nuevas funciones como 
 
 Eric Sans, Barcelona, España
 https://cocoataster.com
-[CONTACT EMAIL]
+privacy@cocoataster.com
 

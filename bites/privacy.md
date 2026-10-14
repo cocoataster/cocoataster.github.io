@@ -16,7 +16,7 @@ This Privacy Policy explains how the iOS app **Bites** ("Bites", "the app") hand
 Eric Sans
 Barcelona, Spain
 Website: https://cocoataster.com
-Email: [CONTACT EMAIL]
+Email: privacy@cocoataster.com
 
 ## 2. Your diary data: stored on your device
 
@@ -149,7 +149,7 @@ Under the GDPR and the Spanish data protection law (LOPDGDD), you have these rig
 - objection, including to processing based on legitimate interest
 - withdrawing consent at any time, without affecting earlier processing
 
-Because the developer holds no personal data that identifies you, most requests are best handled directly on your device or with Apple or Google. You can still contact the developer at [CONTACT EMAIL] with any privacy question or request.
+Because the developer holds no personal data that identifies you, most requests are best handled directly on your device or with Apple or Google. You can still contact the developer at privacy@cocoataster.com with any privacy question or request.
 
 You also have the right to lodge a complaint with a supervisory authority. In Spain this is the **Agencia Española de Protección de Datos (AEPD)**, C/ Jorge Juan 6, 28001 Madrid, https://www.aepd.es.
 
@@ -171,5 +171,5 @@ This policy may be updated, for example when new features such as iCloud sync ar
 
 Eric Sans, Barcelona, Spain
 https://cocoataster.com
-[CONTACT EMAIL]
+privacy@cocoataster.com
 
