@@ -7,9 +7,11 @@ permalink: /bites/privacy/
 
 **Effective date:** October 2026
 
+**Last updated:** 15 October 2026
+
 This Privacy Policy explains how the iOS app **Bites** ("Bites", "the app") handles your information. Bites is a personal diary of restaurants and bars: your "Been" and "Want to go" lists, visits, dishes, ratings, notes, photos and a map.
 
-**The short version:** Bites has no accounts and no developer server. Your diary stays on your device, and in your own private iCloud if iCloud sync is available and turned on. The developer cannot see it. Bites has no ads, does not track you and does not sell data.
+**The short version:** Bites has no accounts and no developer server. Your diary stays on your device. The developer cannot see it. Bites has no ads, does not track you and does not sell data.
 
 ## 1. Who is responsible (data controller)
 
@@ -31,11 +33,13 @@ The developer **does not receive, store or have access to** this data. No accoun
 
 Your diary is also included in your normal device backups (iCloud Backup or a computer backup), under your own control.
 
-**Optional iCloud sync.** If iCloud sync is available in your version of Bites and you are signed in to iCloud with iCloud enabled for Bites, your diary is synced through your **private CloudKit database** at Apple. Only your Apple Account can access that database. The developer cannot read it. You can turn this off at any time in iOS Settings › [your name] › iCloud.
+Bites 1.0 does not sync your diary over iCloud or any other service: your data stays on the device. If sync features are added in the future, this policy will be updated and the change announced.
 
 ## 3. Information processed when you use features
 
-### 3.1 Adding a place from a Google Maps link
+### 3.1 Adding a place from a pasted Maps link
+
+When you choose "Paste Maps link" in Add place, Bites handles Apple Maps links on your device; they are parsed locally and nothing is sent to the developer.
 
 When you paste a Google Maps link, your device uses Apple's LinkPresentation framework to load that link directly from Google's servers. Supported links are maps.app.goo.gl, goo.gl/maps, maps.google.* and google.com/maps.
 
@@ -45,19 +49,21 @@ Because your device contacts Google, Google receives the usual technical data of
 
 When you tap "Open in Google Maps", the saved link opens in Google Maps or your browser, where Google's privacy policy applies.
 
-### 3.2 Finding coordinates and showing the map (Apple Maps)
+### 3.2 Searching for places and showing the map (Apple Maps)
+
+When you search for a place in Add place, the text you type is sent to Apple's MapKit search service. If you have allowed location, your approximate location or the visible map region is sent along so Apple can show nearby results. Apple processes this under its own privacy policy (https://www.apple.com/legal/privacy/). The developer does not receive it.
 
 When you save a place or edit its address, the app sends **only the address text** to Apple's MapKit geocoding service. Apple returns coordinates and a city, which are stored on your device.
 
-The map uses Apple Maps (MapKit). To display it, Apple receives the requests needed to load map content. Apple processes this data under its own privacy policy (https://www.apple.com/legal/privacy/). The developer does not receive it.
+The map uses Apple Maps (MapKit). To display it, Apple receives the requests needed to load map content, also under Apple's privacy policy.
 
 ### 3.3 Your location (optional)
 
-Bites asks for "While Using the App" location permission **only when you choose to sort your places by distance**.
+Bites asks for "While Using the App" location permission the first time you open the Map or the Add place search, and when you sort your places by distance. It uses your location to show your position on the map and to find places near you.
 
-Your location is used **on your device only**, to calculate distances and to show your position on the map. It is not stored in your diary and is not sent to the developer or to analytics.
+Your location is used on your device and with Apple's MapKit as described in section 3.2. It is not stored in your diary and is not sent to the developer or to analytics.
 
-If you decline, Bites sorts by most recent instead. You can change this permission at any time in iOS Settings › Bites › Location.
+If you decline, Bites still works: the map is not centred on you, search is not biased towards your area, and distance sort falls back to most recent. You can change this permission at any time in iOS Settings › Bites › Location.
 
 ### 3.4 Photos
 
@@ -94,7 +100,7 @@ After you log your third visit, Bites may ask Apple to show the standard App Sto
 
 ### 3.8 Settings stored on your device
 
-Bites stores a few preferences locally, such as your chosen theme. These never leave your device except as part of your own backups or sync.
+Bites stores a few preferences locally, such as your chosen theme. These never leave your device except as part of your own backups.
 
 ## 4. What Bites does not do
 
@@ -106,8 +112,8 @@ Bites stores a few preferences locally, such as your chosen theme. These never l
 
 ## 5. Legal bases (GDPR Art. 6)
 
-- **Diary data on your device and in your private iCloud:** the developer does not process this data. It is stored under your own control with Apple's services.
-- **Resolving Google Maps links and geocoding addresses:** performance of the service you request (Art. 6(1)(b)). These steps are needed to add the place you asked to add.
+- **Diary data on your device:** the developer does not process this data. It stays under your own control on your device and in your own device backups.
+- **Resolving Google Maps links, searching for places and geocoding addresses:** performance of the service you request (Art. 6(1)(b)). These steps are needed to add the place you asked to add.
 - **Location:** your consent (Art. 6(1)(a)), given through the iOS permission. You can withdraw it at any time in iOS Settings.
 - **Anonymous analytics:** legitimate interest (Art. 6(1)(f)) in understanding feature usage and improving the app, using a privacy-friendly, anonymised method that is not used for tracking.
 - **In-app purchases:** performance of a contract (Art. 6(1)(b)), with Apple as the payment provider.
@@ -117,7 +123,7 @@ Bites stores a few preferences locally, such as your chosen theme. These never l
 
 | Provider | Role | Data |
 |---|---|---|
-| Apple (Apple Distribution International Ltd., Ireland / Apple Inc., USA) | App Store, in-app purchases, rating prompt, MapKit maps and geocoding, iCloud/CloudKit (if used), device backups | As described in sections 2, 3.2, 3.6 and 3.7, under Apple's privacy policy |
+| Apple (Apple Distribution International Ltd., Ireland / Apple Inc., USA) | App Store, in-app purchases, rating prompt, MapKit maps, place search and geocoding, device backups | As described in sections 2, 3.2, 3.3, 3.6 and 3.7, under Apple's privacy policy |
 | Google (Google LLC / Google Ireland Ltd.) | Serves the Google Maps link you paste | Technical request data (IP address, link) when the link is loaded (section 3.1) |
 | TelemetryDeck | Anonymous usage analytics (processor) | Anonymous signals described in section 3.5 |
 
@@ -129,10 +135,10 @@ Where they do, they rely on safeguards recognised under the GDPR, such as the EU
 
 ## 8. Retention and deletion
 
-- **Diary data** stays on your device, and in your iCloud if synced, until you delete it.
+- **Diary data** stays on your device until you delete it.
   - You can delete individual places, visits, dishes and photos in the app. Deleting a place also deletes its visits, dishes and photos.
   - Deleting the app removes its local data from the device.
-  - iCloud data can be managed or deleted in iOS Settings › [your name] › iCloud › Manage Storage.
+  - Device backups (iCloud Backup or a computer backup) are managed in your device settings or computer.
 - **Location** is not stored by Bites.
 - **Analytics** signals are anonymous. TelemetryDeck retains them, mostly in aggregated form, under its own retention policy. Because they cannot be linked to you, they cannot be retrieved or deleted for a specific person.
 - **Purchase records** are kept by Apple under Apple's policies.
@@ -161,11 +167,11 @@ The developer does not knowingly collect personal data from children. Bites does
 
 ## 11. Security
 
-Your diary is protected by your device's security and, if you use iCloud, by Apple's iCloud security. Network requests made by the app use encrypted connections (HTTPS).
+Your diary is protected by your device's security and, if you back it up, by the security of your chosen backup. Data export files, if you create any, are made on your device and shared only where you choose. Network requests made by the app use encrypted connections (HTTPS).
 
 ## 12. Changes to this policy
 
-This policy may be updated, for example when new features such as iCloud sync are added. The updated version will be published with a new effective date. Significant changes will also be noted in the app's release notes or in the app.
+This policy may be updated, for example when new features such as sync are added. The updated version will be published with a new effective date. Significant changes will also be noted in the app's release notes or in the app.
 
 ## 13. Contact
 

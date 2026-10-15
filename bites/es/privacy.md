@@ -8,9 +8,11 @@ lang: es
 
 **Fecha de entrada en vigor:** octubre de 2026
 
+**Última actualización:** 15 de octubre de 2026
+
 Esta Política de privacidad explica cómo la app para iOS **Bites** («Bites», «la app») trata tu información. Bites es un diario personal de restaurantes y bares: tus listas «Visitados» y «Quiero ir», visitas, platos, valoraciones, notas, fotos y un mapa.
 
-**En resumen:** Bites no tiene cuentas ni servidor propio. Tu diario se queda en tu dispositivo y, si la sincronización con iCloud está disponible y activada, en tu iCloud privado. El desarrollador no puede verlo. Bites no tiene publicidad, no te rastrea y no vende datos.
+**En resumen:** Bites no tiene cuentas ni servidor propio. Tu diario se queda en tu dispositivo. El desarrollador no puede verlo. Bites no tiene publicidad, no te rastrea y no vende datos.
 
 ## 1. Responsable del tratamiento
 
@@ -32,11 +34,13 @@ El desarrollador **no recibe, no almacena ni tiene acceso** a estos datos. No se
 
 Tu diario también se incluye en las copias de seguridad habituales de tu dispositivo (copia en iCloud o en un ordenador), bajo tu control.
 
-**Sincronización opcional con iCloud.** Si la sincronización con iCloud está disponible en tu versión de Bites y tienes la sesión de iCloud iniciada con iCloud activado para Bites, tu diario se sincroniza a través de tu **base de datos privada de CloudKit** en Apple. Solo tu Cuenta de Apple puede acceder a ella. El desarrollador no puede leerla. Puedes desactivarlo en cualquier momento en Ajustes de iOS › [tu nombre] › iCloud.
+Bites 1.0 no sincroniza tu diario por iCloud ni por ningún otro servicio: tus datos se quedan en el dispositivo. Si en el futuro se añaden funciones de sincronización, esta política se actualizará y se anunciará el cambio.
 
 ## 3. Información tratada al usar las funciones
 
-### 3.1 Añadir un lugar desde un enlace de Google Maps
+### 3.1 Añadir un lugar desde un enlace de mapas pegado
+
+Cuando eliges «Pegar enlace de Maps» en Añadir lugar, Bites interpreta los enlaces de Apple Maps en tu dispositivo; se analizan localmente y no se envía nada al desarrollador.
 
 Cuando pegas un enlace de Google Maps, tu dispositivo usa el framework LinkPresentation de Apple para cargar ese enlace directamente desde los servidores de Google. Los enlaces admitidos son maps.app.goo.gl, goo.gl/maps, maps.google.* y google.com/maps.
 
@@ -46,19 +50,21 @@ Como tu dispositivo contacta con Google, Google recibe los datos técnicos habit
 
 Si pulsas «Abrir en Google Maps», el enlace guardado se abre en Google Maps o en tu navegador, donde se aplica la política de privacidad de Google.
 
-### 3.2 Obtener coordenadas y mostrar el mapa (Apple Maps)
+### 3.2 Buscar lugares y mostrar el mapa (Apple Maps)
+
+Cuando buscas un lugar en Añadir lugar, el texto que escribes se envía al servicio de búsqueda de MapKit de Apple. Si has permitido la ubicación, también se envían tu ubicación aproximada o la zona visible del mapa para que Apple pueda mostrar resultados cercanos. Apple trata estos datos según su propia política de privacidad (https://www.apple.com/es/legal/privacy/). El desarrollador no los recibe.
 
 Cuando guardas un lugar o editas su dirección, la app envía **solo el texto de la dirección** al servicio de geocodificación de MapKit de Apple. Apple devuelve unas coordenadas y una ciudad, que se guardan en tu dispositivo.
 
-El mapa usa Apple Maps (MapKit). Para mostrarlo, Apple recibe las peticiones necesarias para cargar el contenido del mapa. Apple trata estos datos según su propia política de privacidad (https://www.apple.com/es/legal/privacy/). El desarrollador no los recibe.
+El mapa usa Apple Maps (MapKit). Para mostrarlo, Apple recibe las peticiones necesarias para cargar el contenido del mapa, también según su política de privacidad.
 
 ### 3.3 Tu ubicación (opcional)
 
-Bites solo pide el permiso de ubicación «Cuando se use la app» **cuando eliges ordenar tus lugares por distancia**.
+Bites pide el permiso de ubicación «Cuando se use la app» la primera vez que abres el Mapa o la búsqueda de Añadir lugar, y cuando ordenas tus lugares por distancia. Usa tu ubicación para mostrar tu posición en el mapa y encontrar lugares cerca de ti.
 
-Tu ubicación se usa **únicamente en tu dispositivo**, para calcular distancias y mostrar tu posición en el mapa. No se guarda en tu diario ni se envía al desarrollador ni a las analíticas.
+Tu ubicación se usa en tu dispositivo y con MapKit de Apple, como se describe en el apartado 3.2. No se guarda en tu diario ni se envía al desarrollador ni a las analíticas.
 
-Si no lo permites, Bites ordena por los más recientes. Puedes cambiar este permiso en cualquier momento en Ajustes de iOS › Bites › Ubicación.
+Si no lo permites, Bites sigue funcionando: el mapa no se centra en ti, la búsqueda no da prioridad a tu zona y la ordenación por distancia pasa a ser por los más recientes. Puedes cambiar este permiso en cualquier momento en Ajustes de iOS › Bites › Ubicación.
 
 ### 3.4 Fotos
 
@@ -95,7 +101,7 @@ Después de registrar tu tercera visita, Bites puede pedir a Apple que muestre l
 
 ### 3.8 Preferencias guardadas en tu dispositivo
 
-Bites guarda localmente algunas preferencias, como el tema elegido. Nunca salen de tu dispositivo, salvo en tus propias copias de seguridad o sincronización.
+Bites guarda localmente algunas preferencias, como el tema elegido. Nunca salen de tu dispositivo, salvo en tus propias copias de seguridad.
 
 ## 4. Lo que Bites no hace
 
@@ -107,8 +113,8 @@ Bites guarda localmente algunas preferencias, como el tema elegido. Nunca salen 
 
 ## 5. Bases jurídicas (art. 6 RGPD)
 
-- **Datos del diario en tu dispositivo y en tu iCloud privado:** el desarrollador no trata estos datos. Se guardan bajo tu control con los servicios de Apple.
-- **Resolución de enlaces de Google Maps y geocodificación de direcciones:** ejecución del servicio que solicitas (art. 6.1.b). Son pasos necesarios para añadir el lugar que has pedido añadir.
+- **Datos del diario en tu dispositivo:** el desarrollador no trata estos datos. Permanecen bajo tu control en tu dispositivo y en tus propias copias de seguridad.
+- **Resolución de enlaces de Google Maps, búsqueda de lugares y geocodificación de direcciones:** ejecución del servicio que solicitas (art. 6.1.b). Son pasos necesarios para añadir el lugar que has pedido añadir.
 - **Ubicación:** tu consentimiento (art. 6.1.a), dado mediante el permiso de iOS. Puedes retirarlo en cualquier momento en Ajustes de iOS.
 - **Analíticas anónimas:** interés legítimo (art. 6.1.f) en entender el uso de las funciones y mejorar la app, con un método anonimizado y respetuoso con la privacidad que no se usa para rastrear.
 - **Compras dentro de la app:** ejecución de un contrato (art. 6.1.b), con Apple como proveedor de pagos.
@@ -118,7 +124,7 @@ Bites guarda localmente algunas preferencias, como el tema elegido. Nunca salen 
 
 | Proveedor | Función | Datos |
 |---|---|---|
-| Apple (Apple Distribution International Ltd., Irlanda / Apple Inc., EE. UU.) | App Store, compras dentro de la app, solicitud de valoración, mapas y geocodificación de MapKit, iCloud/CloudKit (si se usa), copias de seguridad | Según los apartados 2, 3.2, 3.6 y 3.7, conforme a la política de privacidad de Apple |
+| Apple (Apple Distribution International Ltd., Irlanda / Apple Inc., EE. UU.) | App Store, compras dentro de la app, solicitud de valoración, mapas, búsqueda de lugares y geocodificación de MapKit, copias de seguridad | Según los apartados 2, 3.2, 3.3, 3.6 y 3.7, conforme a la política de privacidad de Apple |
 | Google (Google LLC / Google Ireland Ltd.) | Sirve el enlace de Google Maps que pegas | Datos técnicos de la petición (IP, enlace) al cargar el enlace (apartado 3.1) |
 | TelemetryDeck | Analíticas de uso anónimas (encargado del tratamiento) | Señales anónimas descritas en el apartado 3.5 |
 
@@ -130,10 +136,10 @@ Cuando lo hacen, se basan en garantías reconocidas por el RGPD, como el Marco d
 
 ## 8. Conservación y supresión
 
-- **Los datos del diario** permanecen en tu dispositivo, y en tu iCloud si se sincronizan, hasta que los borres.
+- **Los datos del diario** permanecen en tu dispositivo hasta que los borres.
   - Puedes borrar lugares, visitas, platos y fotos concretos desde la app. Al borrar un lugar se borran también sus visitas, platos y fotos.
   - Al eliminar la app se borran sus datos locales del dispositivo.
-  - Los datos de iCloud se pueden gestionar o borrar en Ajustes de iOS › [tu nombre] › iCloud › Gestionar almacenamiento.
+  - Las copias de seguridad del dispositivo (copia en iCloud o en un ordenador) se gestionan en los ajustes de tu dispositivo o en tu ordenador.
 - **La ubicación** no la guarda Bites.
 - **Las señales de analíticas** son anónimas. TelemetryDeck las conserva, principalmente de forma agregada, según su propia política de conservación. Como no pueden vincularse contigo, no se pueden recuperar ni suprimir para una persona concreta.
 - **Los registros de compra** los conserva Apple según sus políticas.
@@ -162,11 +168,11 @@ El desarrollador no recoge conscientemente datos personales de menores. Bites no
 
 ## 11. Seguridad
 
-Tu diario está protegido por la seguridad de tu dispositivo y, si usas iCloud, por la seguridad de iCloud de Apple. Las peticiones de red de la app usan conexiones cifradas (HTTPS).
+Tu diario está protegido por la seguridad de tu dispositivo y, si haces copias de seguridad, por la seguridad de la copia que elijas. Los archivos de exportación de datos, si creas alguno, se generan en tu dispositivo y solo se comparten donde tú decidas. Las peticiones de red de la app usan conexiones cifradas (HTTPS).
 
 ## 12. Cambios en esta política
 
-Esta política puede actualizarse, por ejemplo al añadir nuevas funciones como la sincronización con iCloud. La versión actualizada se publicará con una nueva fecha de entrada en vigor. Los cambios importantes también se indicarán en las notas de la versión o en la app.
+Esta política puede actualizarse, por ejemplo al añadir nuevas funciones como la sincronización. La versión actualizada se publicará con una nueva fecha de entrada en vigor. Los cambios importantes también se indicarán en las notas de la versión o en la app.
 
 ## 13. Contacto
 
