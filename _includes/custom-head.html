@@ -12,3 +12,10 @@
     }
   })();
 </script>
+{% if page.bites_landing %}
+<link rel="alternate" hreflang="en" href="{{ '/bites/' | absolute_url }}">
+<link rel="alternate" hreflang="es" href="{{ '/bites/es/' | absolute_url }}">
+<link rel="alternate" hreflang="ca" href="{{ '/bites/ca/' | absolute_url }}">
+<link rel="alternate" hreflang="x-default" href="{{ '/bites/' | absolute_url }}">
+<meta property="og:locale" content="{% if page.lang == 'es' %}es_ES{% elsif page.lang == 'ca' %}ca_ES{% else %}en_US{% endif %}">
+{% endif %}

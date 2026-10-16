@@ -4,15 +4,16 @@ title: "Els teus restaurants, bars i cafeteries, en un diari només teu."
 description: "Diari privat de restaurants, bars i cafeteries per a iPhone. Desa els llocs que vols provar i apunta plats i preus. Sense compte ni anuncis."
 permalink: /bites/ca/
 lang: ca
+bites_landing: true
+image: /assets/icons/bites.png
 ---
-<!-- Esborrany: text provisional pendent d'aprovació d'Eric (COC-149). No enllaçar des del menú de capçalera. -->
-<p><a href="/bites/">EN</a> · <a href="/bites/es/">ES</a> · <a href="/bites/ca/">CA</a></p>
+<p><a href="/bites/" hreflang="en">EN</a> · <a href="/bites/es/" hreflang="es">ES</a> · <strong>CA</strong></p>
+
+<p><img src="/assets/icons/bites.png" alt="Icona de Bites" width="96" height="96" style="border-radius:22%"></p>
 
 Desa els llocs que vols provar. Quan hi vagis, apunta què vas demanar i quant va costar. I torna-ho a trobar tot al mapa. Sense compte, sense mur i sense ningú mirant.
 
-Disponible a l'App Store l'1 de novembre · iPhone · Gratuïta, amb Pro opcional
-
-<!-- Captures de pantalla aquí (capçalera: pestanya Bites en mode llista). -->
+**Disponible a l'App Store l'1 de novembre · iPhone · Gratuïta, amb Pro opcional**
 
 ## Funcions
 
@@ -24,8 +25,6 @@ Dues llistes, sense complicacions. A Pendents hi deses els llocs que vols provar
 
 Toca +, cerca el restaurant, bar o cafeteria a Apple Maps i toca'l. El nom, l'adreça, el telèfon i el web s'omplen sols. No hi surt? Afegeix-lo a mà, n'hi ha prou amb el nom. Ja el tenies a Google Maps? Copia l'enllaç i enganxa'l.
 
-<!-- Captura: full d'Afegeix un lloc amb resultats de cerca. -->
-
 ### Apunta cada visita
 
 La data, quants éreu, les estrelles i les teves notes. Afegeix-hi una foto per recordar la taula, la terrassa o la cua.
@@ -34,9 +33,17 @@ La data, quants éreu, les estrelles i les teves notes. Afegeix-hi una foto per 
 
 Apunta cada plat o beguda amb el preu i d'1 a 5 estrelles. Bites suma el total i el que va sortir per persona, i així la propera vegada saps què repetir i què no.
 
+### Preferits i cronologia
+
+Marca com a preferits els llocs que t'encanten. Cada visita queda en una cronologia, perquè vegis on has estat i quan.
+
 ### En llista o al mapa
 
 Canvia entre la llista i el mapa. Filtra per tipus de cuina, ciutat, preu, valoració o les teves etiquetes. Ordena per més recents, per valoració o per distància. Al mapa, tria si vols veure els llocs visitats, els pendents o tots.
+
+### El teu diari, amb tu
+
+Exporta-ho tot en JSON o CSV quan vulguis.
 
 ## Gratuït i Pro
 
@@ -53,7 +60,7 @@ Canvia entre la llista i el mapa. Filtra per tipus de cuina, ciutat, preu, valor
 
 **Preus:** Mensual 1,99 € · Anual 12,99 €, amb 7 dies de prova gratuïta · Per sempre 29,99 €, pagament únic.
 
-*Preus en euros. L'App Store mostra el preu del teu país. Les subscripcions es renoven automàticament i les pots cancel·lar als ajustos del teu Apple ID. La prova gratuïta és per a nous subscriptors del pla anual.*
+*Preus en euros. A l'app i a l'App Store veuràs els preus en la teva moneda local. Les subscripcions es renoven automàticament i les pots cancel·lar als ajustos del teu Apple ID. La prova gratuïta és per a nous subscriptors del pla anual.*
 
 ## Privadesa
 
@@ -63,7 +70,7 @@ Canvia entre la llista i el mapa. Filtra per tipus de cuina, ciutat, preu, valor
 - Bites no té servidor propi: els teus llocs, visites, notes i fotos es queden al teu iPhone i a les teves còpies de seguretat. Nosaltres no els podem veure.
 - Sense anuncis, sense seguiment i sense vendre dades.
 - Bites compta alguns esdeveniments anònims, com ara «s'ha afegit un lloc», per saber quines funcions es fan servir. Mai no envia el que escrius, on has estat ni les teves fotos.
-- Si hi dones permís, Bites fa servir la teva ubicació per mostrar-te al mapa i trobar llocs a prop quan cerques. Les cerques passen per Apple Maps, el mateix servei del mapa. La teva ubicació no ens arriba mai a nosaltres.
+- Si hi dones permís, Bites fa servir la teva ubicació per ordenar per distància, mostrar-te al mapa i trobar llocs a prop quan cerques. Les cerques passen per Apple Maps, el mateix servei del mapa. La teva ubicació no ens arriba mai a nosaltres.
 
 [Llegeix la política de privadesa](/bites/ca/privacy/)
 
@@ -78,6 +85,12 @@ Sí. Els llocs, les visites i les notes il·limitats, el mapa i una foto per vis
 **Com afegeixo un lloc?**
 Toca + i escriu el nom al cercador. Després toca el resultat i desa'l. Si no hi surt, tria «Afegeix manualment»: només cal el nom. També pots copiar l'enllaç del lloc a Google Maps i triar «Enganxa l'enllaç de Google Maps».
 
+**Puc treure les meves dades?**
+Sí. Pots exportar tot el teu diari en JSON o CSV quan vulguis.
+
+**Se sincronitza entre dispositius?**
+Encara no. El teu diari es queda al teu iPhone. La sincronització arribarà més endavant.
+
 **Què passa si deixo de pagar Pro?**
 No s'esborra res. Les teves fotos continuen allà. Simplement no en pots afegir més d'una per visita i l'app torna al tema Clàssic.
 
@@ -86,8 +99,10 @@ Bites està feta per a iPhone. Està en català, castellà i anglès.
 
 ---
 
-Disponible a l'App Store l'1 de novembre · iPhone · Gratuïta, amb Pro opcional
+**Disponible a l'App Store l'1 de novembre · iPhone · Gratuïta, amb Pro opcional**
 
 [Política de privadesa](/bites/ca/privacy/) · [Condicions d'ús](https://www.apple.com/legal/internet-services/itunes/dev/stdeula/) · Contacte: [privacy@cocoataster.com](mailto:privacy@cocoataster.com)
+
+[EN](/bites/) · [ES](/bites/es/) · CA
 
 Feta a Barcelona per Cocoataster.
